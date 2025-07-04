@@ -1,0 +1,41 @@
+html{
+	background-color: darkviolet;
+}
+
+h1, legend, label{
+	color: cyan;
+}
+
+input, textarea{
+	background-color: yellow;
+	color: darkviolet;
+	border-radius: 30px;
+	border: 3px solid cyan;
+}
+
+input[type="text"]:focus, .btn1:hover {
+	background-color: orange;
+}
+
+.btn1{
+	background-color: yellow;
+	color: darkviolet;
+	border-radius: 30px;
+	box-shadow: 0;
+	border: 1px solid yellow;
+}
+
+input[type="text"]::placeholder{
+	color:red;
+}
+input[type="text"]:valid{
+	border: 5px solid cyan;
+}
+
+input[type="text"]:invalid{
+	border: 5px solid red;
+}
+
+input[type="radio"]{
+	opacity: 1;
+}

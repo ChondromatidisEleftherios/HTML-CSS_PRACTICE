@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="forms11_style.css">
+	<title> Forms 11 - styling </title>
+</head>
+<body>
+<form>
+	<h1> Credentials </h1> <br>
+	<label for="uname"> *UserName: </label>
+	<input type="text" name="uname" class="uname" maxlength="10" minlength="3" required placeholder="John Doe..."> <br>
+	<button class="btn1"> Submit </button>
+</form>
+<h1> Write a Post: </h1> <br>
+<textarea rows="10" cols="100" maxlength="20"> </textarea> <br> <br>
+<fieldset>
+	<legend> Choose Gender </legend>
+	<div class="out"><div class="in"></div></div>
+	<input type="radio" required name="gend" class="genderm">
+	<label for="gender"> Male </label>
+	<div class="out"><div class="in"></div></div>
+	<input type="radio" required name="gend" class="genderf">
+	<label for="gender"> Female </label>
+</fieldset>
+</body>
+</html>
