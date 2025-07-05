@@ -1,0 +1,22 @@
+html{
+	background-color: teal;
+	color: white;
+}
+
+input{
+	border-radius: 30px;
+	background-color: black;
+	color: cyan;
+	border: 3px solid cyan;
+	transition: border 0.7s ease-out, transform 0.45s ease-out;
+	outline: none;
+}
+
+input:invalid{
+	border: 3px solid red;
+}
+
+input:focus{
+	transform: scale(1.04);
+}
+
