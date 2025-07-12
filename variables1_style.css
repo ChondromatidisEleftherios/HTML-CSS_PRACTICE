@@ -1,0 +1,27 @@
+html{
+	--borders-color: #1d7334;
+	--text-def: #8326ad;
+}
+
+.box1, .box2, .box3{
+border: 3px solid var(--borders-color);
+color: var(--text-def);
+width: 30px;
+}
+
+.box1{
+	background-color: orange;
+}
+
+.box2, .box3{
+	background-color: darkgoldenrod;
+}
+
+h2, p{
+	color: var(--text-def);
+}
+
+.username{
+	border: 5px solid var(--borders-color);
+	background-color: purple;
+}
