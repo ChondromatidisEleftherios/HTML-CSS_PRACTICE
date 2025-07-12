@@ -1,0 +1,15 @@
+html{
+	background-color: teal;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+
+img{
+	height: min(150px, 40%);
+	width: min(150px, 40%); /* Επιλεγει ποιο απο τα δυο ειναι μικροτερο, τα 150px ή το 40% του πλατους του container? Παιρνει 2+ ορισματα*/
+}
