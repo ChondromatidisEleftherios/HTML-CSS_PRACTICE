@@ -1,0 +1,27 @@
+html.lighttheme{
+	--bg-color: white;
+	--text-color: blue;
+	background-color: var(--bg-color);
+}
+
+html.darktheme{
+	--bg-color: #272837;
+	--text-color: #ced0ed;
+	background-color: var(--bg-color);
+}
+
+.header, label{
+	color: var(--text-color);
+
+}
+
+.pass{
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	outline: none;
+}
+
+.btn{
+	border-radius: 20px;
+	outline: none;
+}
