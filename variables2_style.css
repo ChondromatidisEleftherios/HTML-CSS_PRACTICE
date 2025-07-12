@@ -1,0 +1,16 @@
+html{
+	--bg-color: re;
+	--bg-color-fixed: blue;
+	--text-color: yellow;
+	background-color: var(--bg-color-fixed);
+}
+
+.box1{
+	background-color: var(--bg-color,var(--bg-color-fixed)); /* Fallback value σε περιπτωση λαθους. Μπαινει στην αρχικη συναρτηση σαν 2ο ορισμα! */
+	border: 4px solid var(--text-color);
+	width: 20px;
+}
+
+h1{
+	color: var(--text-color);
+}
