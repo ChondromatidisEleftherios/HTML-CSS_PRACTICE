@@ -1,0 +1,28 @@
+html{
+	background: linear-gradient(90deg, maroon, darkviolet, maroon);
+	--border-col: cyan;
+	--text-col: orange;
+	--bg-col: pink;
+}
+
+.cont{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	width: clamp(5rem,10rem,30rem);
+	height: clamp(5rem,7rem,14rem);
+	border: 5px solid var(--border-col);
+	background-color: var(--bg-col);
+	padding: 3rem;
+}
+
+.par{
+	color: var(--text-col);
+	font-size: 1rem;
+}
+
+.cont2{
+	width: 10rem;
+	height: 11rem;
+	background-color: teal;
+}
