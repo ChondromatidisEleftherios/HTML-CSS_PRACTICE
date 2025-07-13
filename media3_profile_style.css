@@ -1,0 +1,143 @@
+html{
+	--card-col: #12121c;
+	--card-bord-col: #5fe0da;
+	--text-col: #09f7f4;
+	background-color: #260750;
+}
+
+.cont1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.2rem;
+	overflow: hidden;
+	max-width: 1800px;
+	min-width: 300px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+
+.cont2{
+	display: flex;
+	flex-direction: column;
+	border: 3px solid var(--card-bord-col);
+	padding: 1.3rem;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	min-width: 150px;
+	max-width: 1200px;
+	background-color: var(--card-col);
+	box-shadow: 15px 15px #2d3441;
+}
+
+h2, p{
+	color: var(--text-col);
+	display: flex;
+	gap: 10px;
+}
+
+p{
+	font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+h2{
+	font-size: clamp(1.5rem, 2.2vw, 2.5rem);
+}
+
+
+img{
+	border-radius: 40px;
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 3 / 5;
+}
+
+.btn{
+	background-color: #260750;
+	border-radius: 30px;
+	outline: 0px;
+	border: 2px solid var(--card-bord-col);
+	color: var(--text-col);
+	transition: 0.25s ease-in background-color, 0.25s linear color, 0.35s ease-in transform;
+	font-size: 1rem;
+}
+
+.btn:hover{
+	background-color: var(--card-bord-col);
+	color: #260750;
+	transform: translateY(-2px) scale(1.15);
+	cursor: pointer;
+}
+
+@media (max-width: 1025px){
+	img{
+		object-fit: contain;
+		height: 450px;
+		width:100%;
+	}
+
+	.cont1{
+		padding: 1.5rem;
+	}
+
+	.cont2{
+		padding: 0.8rem;
+	}
+
+	.btn{
+		width:100%;
+		padding: 10px;
+		border:3px solid var(--card-bord-col);
+		font-size: 2.3rem;
+	}
+
+	.btn:hover{
+	background-color: var(--card-bord-col);
+	color: #260750;
+	transform: translateY(-1px) scale(1.03);
+	cursor: none;
+	}
+
+p{
+	font-size: clamp(1rem, 7vw, 3rem);
+}
+
+h2{
+	font-size: clamp(1.5rem, 10vw, 3.5rem);
+}
+}
+
+@media (max-width: 450px){
+	img{
+		object-fit: contain;
+		height: 275px;
+		width:100%;
+	}
+
+	.cont1{
+		padding: 1rem;
+	}
+
+	.cont2{
+		padding: 0.5rem;
+	}
+
+	.btn{
+		width:100%;
+		padding: 10px;
+		border:3px solid var(--card-bord-col);
+		font-size: 1rem;
+	}
+
+
+p{
+	font-size: clamp(1rem, 7vw, 3rem);
+}
+
+h2{
+	font-size: clamp(1.5rem, 10vw, 3.5rem);
+}
+}
