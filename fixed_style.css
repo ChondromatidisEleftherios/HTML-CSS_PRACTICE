@@ -1,0 +1,21 @@
+/* Τα fixed elements δεν ειναι στο flow (ειναι ghost), και όσο και να σκρολαρεις μενουν σε μια συγκεκριμενη θεση.*/
+html {
+	background-color: blue;
+	--cont-col: teal;
+}
+
+.cont1 {
+	position: fixed;
+	max-width: 10rem;
+	min-width: 5rem;
+	max-height: 3rem;
+	min-height: 2rem;
+	background-color: var(--cont-col);
+	top: 0px; /*Υποχρεωτικο*/
+}
+
+.cont2 {
+	position: relative;
+	max-width: 100%;
+	background-color: var(--cont-col);
+}

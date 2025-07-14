@@ -1,0 +1,26 @@
+/* Το χρησιμοποιεις για κουμπια κτλπ*/
+html {
+	background: blue;
+}
+
+.cont1 {
+	max-height: 30rem;
+	max-width: 30rem;
+	position: relative; /*Αν ειναι default, δε πιάνει τα absolute elements */
+}
+img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	position: absolute;
+	z-index: -1;
+}
+.text {
+	position: relative;
+	text-align: center;
+	top: 300px;
+	width: 100%;
+	background: black;
+	opacity: 60%;
+	color: white;
+}
