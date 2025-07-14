@@ -1,0 +1,26 @@
+/*Το χρησιμοποιεις οταν θες να μετακινήσεις κάτι πολύ λίγο */
+
+html{
+	background: repeating-linear-gradient(yellow, red);
+	--cont-col: teal;
+	--bord-col: violet;
+	--text-col: white;
+}
+
+.cont1, .cont2{
+background-color: var(--cont-col);
+border: 3px solid var(--bord-col);
+color: var(--text-col);
+max-width: 10rem;
+min-height: 12rem;
+text-align: center;
+left: 30px; /*ΔΕΝ ΚΑΝΕΙ ΤΙΠΟΤΑ! */
+}
+
+.cont2{
+	position: relative;
+	left: 30px;
+	top: 10px;
+	text-align: center;
+}
+
